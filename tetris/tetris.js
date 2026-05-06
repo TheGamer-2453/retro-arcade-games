@@ -58,7 +58,7 @@ const COLOR_EMPTY_BLOCK = '#343434';
 const COLOR_GAME_OVER_OVERLAY = '#000000bb';
 const COLOR_FONT = '#FFF';
 
-const BLOCK_SIZE = 46;
+const BLOCK_SIZE = 43;
 const BLOCK_BACKGROUND = '#292929';
 
 const GRAVITY_SPEED = 1;
