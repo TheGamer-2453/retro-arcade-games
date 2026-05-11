@@ -135,13 +135,13 @@ function movePlayer(e) {
         }
         return;
     }
-    if (e.code == "ArrowLeft") {
+    if (e.code == "ArrowLeft" || e.code == "KeyA") {
         let nextplayerX = player.x - player.velocityX;
         if (!outOfBounds(nextplayerX)) {
             player.x = nextplayerX;
         }
     }
-    else if (e.code == "ArrowRight") {
+    else if (e.code == "ArrowRight" || e.code == "KeyD") {
         let nextplayerX = player.x + player.velocityX;
         if (!outOfBounds(nextplayerX)) {
             player.x = nextplayerX;
