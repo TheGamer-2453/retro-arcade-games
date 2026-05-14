@@ -89,7 +89,6 @@ function update() {
     }
     else if (ball.y + ball.height >= boardHeight) {
         context.font = "20px sans-serif";
-        context.fillText("Game Over: Press 'Space' to Restart", 80, 400);
         gameOver = true;
     }
 
@@ -128,12 +127,8 @@ function outOfBounds(xPosition) {
 }
 
 function movePlayer(e) {
-    if (gameOver) {
-        if (e.code == "Space") {
-            resetGame();
-            console.log("RESET");
-        }
-        return;
+   if (gameOver) {
+    return;
     }
     if (e.code == "ArrowLeft" || e.code == "KeyA") {
         let nextplayerX = player.x - player.velocityX;
@@ -187,28 +182,5 @@ function createBlocks() {
         }
     }
     blockCount = blockArray.length;
-}
-
-function resetGame() {
-    gameOver = false;
-    player = {
-        x : boardWidth/2 - playerWidth/2,
-        y : boardHeight - playerHeight - 5,
-        width: playerWidth,
-        height: playerHeight,
-        velocityX : playerVelocityX
-    }
-    ball = {
-        x : boardWidth/2,
-        y : boardHeight/2,
-        width: ballWidth,
-        height: ballHeight,
-        velocityX : ballVelocityX,
-        velocityY : ballVelocityY
-    }
-    blockArray = [];
-    blockRows = 3;
-    score = 0;
-    createBlocks();
 }
 
