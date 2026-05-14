@@ -1,6 +1,15 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: black;
+    color: white;
+
 }
 
 #dealer-cards img {
@@ -16,13 +25,32 @@ body {
 }
 
 #hit {
-    width: 100px;
-    height: 50px;
-    font-size: 20px;
+    background-color: red;
+    color: white;
 }
 
 #stay {
-    width: 100px;
-    height: 50px;
+    background-color: green;
+    color: white;
+}
+
+button {
+    width: 120px;
+    height: 45px;
     font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.2s ease;
+}
+
+button hover {
+    transform: scale(1.o5);
+    opacity: 0.9;
+}
+
+button:active {
+    transform: scale(0.95);
 }

@@ -1,6 +1,11 @@
 body {
     font-family: Arial, Arial, Helvetica, sans-serif;
     text-align: center;
+    text-align: center;
+    margin: 0;
+    padding-top: 40px;
+    background-color: black;
+    color: white;
 }
 
 #board {
@@ -18,7 +23,7 @@ body {
     height: 70px;
     width: 70px;
     margin: 6px;
-    background-color: white;
+    background-color: black;
     border-radius: 50%;
     border: 5px solid #1f51ff;
 }
