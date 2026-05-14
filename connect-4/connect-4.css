@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#board {
+    height: 550px;
+    width: 650px;
+    background-color: skyblue;
+    border: 10px solid navy;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile {
+    height: 70px;
+    width: 70px;
+    margin: 6px;
+    background-color: white;
+    border-radius: 50%;
+    border: 5px solid #1f51ff;
+}
+
+.red-piece {
+    background-color: #ff3131;
+}
+
+.yellow-piece {
+    background-color: #CFFF04;
+}
