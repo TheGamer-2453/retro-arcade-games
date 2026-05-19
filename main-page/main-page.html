@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Retro Arcade Gamers</title>
+        <link rel="stylesheet" href="main-page.css">
+    </head>
+    <body>
+        <div class="lines"></div>
+        <div class="main">
+            <div class="noise"></div>
+            <div class="noise"></div>
+            <div class="VHS" data-splitting>
+                Retro Arcade Games
+            </div>
+            <div class="time">
+                <span id="time"></span>
+            </div>
+            <div class="counter">
+                REC
+            <label id="minutes">00</label>:<label id="seconds">00</label>
+            </div>
+        </div>
+        <script src="main-page.js"></script>
+        <div class="button" style="position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); display:flex; flex-direction:column; align-items:center;">
+            <button style="background-color:white;" onclick="location.reload()">Single Player</button>
+            <button style="background-color:white;">Multiplayer</button>
+        </div>
+    </body>
+</html>

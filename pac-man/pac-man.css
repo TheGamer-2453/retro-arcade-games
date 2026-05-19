@@ -11,3 +11,7 @@ body {
 #board {
     background-color: black;
 }
+.button {
+    background-color: black;
+    color: white;
+}

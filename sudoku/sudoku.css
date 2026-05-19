@@ -86,3 +86,7 @@ hr {
     border-right: 1px solid skyblue;
 }
 
+.button {
+    background-color: black;
+    color: white;
+}

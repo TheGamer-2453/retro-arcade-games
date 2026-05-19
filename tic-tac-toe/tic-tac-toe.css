@@ -48,3 +48,8 @@ hr {
 .vertical-line {
     border-right: 5px solid skyblue;
 }
+
+.button {
+    background-color: black;
+    color: white;
+}

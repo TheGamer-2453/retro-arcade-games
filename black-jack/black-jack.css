@@ -54,3 +54,9 @@ button hover {
 button:active {
     transform: scale(0.95);
 }
+
+
+.button {
+    background-color: black;
+    color: white;
+}

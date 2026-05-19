@@ -74,3 +74,7 @@ body {
     background-color: lightgray;
     border: none;
 }
+.button {
+    background-color: black;
+    color: white;
+}

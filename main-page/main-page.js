@@ -1,0 +1,43 @@
+Splitting();
+
+function pad(val) {
+  var valString = val + "";
+  if (valString.length < 2) {
+    return "0" + valString;
+  } else {
+    return valString;
+  }
+}
+
+var totalSeconds = 0;
+
+setInterval(setTime, 1000);
+
+function setTime() {
+  ++totalSeconds;
+  document.getElementById("seconds").innerHTML = pad(totalSeconds % 60);
+  document.getElementById("minutes").innerHTML = pad(parseInt(totalSeconds / 60));
+}
+
+function checkTime(i) {
+  if (i < 10) {
+    i = "0" + i;
+  }
+  return i;
+}
+
+setInterval(getTime, 1000);
+
+function getTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
+  t = setTimeout(function() {
+    getTime()
+  }, 500);
+}
+
