@@ -11,6 +11,7 @@ var snakeBody = [];
 var foodX;
 var foodY;
 var gameOver = false;
+var score = 0;
 
 window.onload = function() {
     board = document.getElementById("board");
@@ -31,11 +32,16 @@ function update() {
     context.fillStyle="black";
     context.fillRect(0, 0, board.width, board.height);
 
+    context.fillStyle = "white";
+    context.font = "20px Arial";
+    context.fillText("Score: " + score, board.width - 120, 25);
+
     context.fillStyle="red";
     context.fillRect(foodX, foodY, blockSize, blockSize);
 
     if (snakeX == foodX && snakeY == foodY) {
         snakeBody.push([foodX, foodY]);
+        score++;
         placeFood();
     }
 
@@ -56,13 +62,13 @@ function update() {
 
     if (snakeX < 0 || snakeX > cols*blockSize || snakeY < 0 || snakeY > rows*blockSize) {
         gameOver = true;
-        alert("Game Over");
+        alert("Game Over! Score: " + score);
     }
 
     for (let i = 0; i < snakeBody.length; i++) {
         if (snakeX == snakeBody[i][0] && snakeY == snakeBody[i][1]) {
             gameOver = true;
-            alert("Game Over");
+            alert("Game Over! Score: " + score);
         }
     }
 }
