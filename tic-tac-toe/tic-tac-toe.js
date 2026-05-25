@@ -105,4 +105,3 @@ function checkWinner() {
         return;
     }
 }
-

@@ -49,6 +49,30 @@ hr {
     border-right: 5px solid skyblue;
 }
 
+button {
+    width: 120px;
+    height: 45px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.2s ease;
+}
+
+
+button hover {
+    transform: scale(1.o5);
+    opacity: 0.9;
+}
+
+
+button:active {
+    transform: scale(0.95);
+}
+
+
 .button {
     background-color: black;
     color: white;

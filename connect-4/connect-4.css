@@ -13,7 +13,6 @@ body {
     width: 650px;
     background-color: skyblue;
     border: 10px solid navy;
-
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -34,4 +33,29 @@ body {
 
 .yellow-piece {
     background-color: #CFFF04;
+}
+
+button {
+    width: 120px;
+    height: 45px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.2s ease;
+}
+
+button hover {
+    transform: scale(1.o5);
+    opacity: 0.9;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.button {
+    color: white;
 }

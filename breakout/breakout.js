@@ -1,9 +1,7 @@
-
 let board;
 let boardWidth = 500;
 let boardHeight = 500;
 let context; 
-
 let playerWidth = 80;
 let playerHeight = 10;
 let playerVelocityX = 10;
@@ -37,10 +35,8 @@ let blockColumns = 8;
 let blockRows = 3;
 let blockMaxRows = 10;
 let blockCount = 0;
-
 let blockX = 15;
 let blockY = 45;
-
 let score = 0;
 let gameOver = false;
 
@@ -49,13 +45,10 @@ window.onload = function() {
     board.height = boardHeight;
     board.width = boardWidth;
     context = board.getContext("2d"); 
-
     context.fillStyle="skyblue";
     context.fillRect(player.x, player.y, player.width, player.height);
-
     requestAnimationFrame(update);
     document.addEventListener("keydown", movePlayer);
-
     createBlocks();
 }
 
@@ -65,10 +58,8 @@ function update() {
         return;
     }
     context.clearRect(0, 0, board.width, board.height);
-
     context.fillStyle = "lightgreen";
     context.fillRect(player.x, player.y, player.width, player.height);
-
     context.fillStyle = "white";
     ball.x += ball.velocityX;
     ball.y += ball.velocityY;
@@ -183,4 +174,3 @@ function createBlocks() {
     }
     blockCount = blockArray.length;
 }
-

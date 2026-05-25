@@ -1,12 +1,8 @@
-
-
 var playerRed = "R";
 var playerYellow = "Y";
 var currPlayer = playerRed;
-
 var gameOver = false;
 var board;
-
 var rows = 6;
 var columns = 7;
 var currColumns = []; 
@@ -18,7 +14,6 @@ window.onload = function() {
 function setGame() {
     board = [];
     currColumns = [5, 5, 5, 5, 5, 5, 5];
-
     for (let r = 0; r < rows; r++) {
         let row = [];
         for (let c = 0; c < columns; c++) {
@@ -41,7 +36,6 @@ function setPiece() {
     let coords = this.id.split("-");
     let r = parseInt(coords[0]);
     let c = parseInt(coords[1]);
-
     r = currColumns[c]; 
 
     if (r < 0) { 
@@ -61,8 +55,8 @@ function setPiece() {
 
     r -= 1; 
     currColumns[c] = r; 
-
     checkWinner();
+    
 }
 
 function checkWinner() {

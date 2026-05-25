@@ -24,7 +24,6 @@ function setMines() {
     }
 }
 
-
 function startGame() {
     document.getElementById("mines-count").innerText = minesCount;
     document.getElementById("flag-button").addEventListener("click", setFlag);
@@ -41,7 +40,6 @@ function startGame() {
         }
         board.push(row);
     }
-
     console.log(board);
 }
 
@@ -114,10 +112,8 @@ function checkMine(r, c) {
     minesFound += checkTile(r-1, c-1);      
     minesFound += checkTile(r-1, c);        
     minesFound += checkTile(r-1, c+1);      
-
     minesFound += checkTile(r, c-1);       
     minesFound += checkTile(r, c+1);        
-
     minesFound += checkTile(r+1, c-1);     
     minesFound += checkTile(r+1, c);       
     minesFound += checkTile(r+1, c+1);     
@@ -132,10 +128,8 @@ function checkMine(r, c) {
         checkMine(r-1, c-1);    
         checkMine(r-1, c);      
         checkMine(r-1, c+1);  
-
         checkMine(r, c-1);    
         checkMine(r, c+1);     
-
         checkMine(r+1, c-1);  
         checkMine(r+1, c);    
         checkMine(r+1, c+1);
@@ -156,4 +150,3 @@ function checkTile(r, c) {
     }
     return 0;
 }
-

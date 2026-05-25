@@ -18,7 +18,6 @@ window.onload = function() {
     board.height = rows * blockSize;
     board.width = cols * blockSize;
     context = board.getContext("2d");
-
     placeFood();
     document.addEventListener("keyup", changeDirection);
     setInterval(update, 1000/10); 
@@ -31,11 +30,9 @@ function update() {
 
     context.fillStyle="black";
     context.fillRect(0, 0, board.width, board.height);
-
     context.fillStyle = "white";
     context.font = "20px Arial";
     context.fillText("Score: " + score, board.width - 120, 25);
-
     context.fillStyle="red";
     context.fillRect(foodX, foodY, blockSize, blockSize);
 
@@ -91,7 +88,6 @@ function changeDirection(e) {
         velocityY = 0;
     }
 }
-
 
 function placeFood() {
     foodX = Math.floor(Math.random() * cols) * blockSize;

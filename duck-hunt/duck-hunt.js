@@ -25,14 +25,12 @@ function addDucks() {
         duckImage.height = duckHeight;
         duckImage.draggable = false;
         duckImage.style.position = "absolute"; 
-
         duckImage.onclick = function() {
             let duckShotSound = new Audio("duck-shot.mp3");
             duckShotSound.play();
             score += 1;
             document.getElementById("score").innerHTML = score;
             document.body.removeChild(this);
-           
             let remaining_ducks = [];
             for (let i = 0; i < ducks.length; i++) {
                 if (ducks[i].image !== this) {
@@ -99,12 +97,10 @@ function addDog(duckCount) {
     }
     dogImage.height = 152;
     dogImage.draggable = false;
-
     dogImage.style.position = "fixed"; 
     dogImage.style.bottom = "0px";     
     dogImage.style.left = "50%";      
     document.body.appendChild(dogImage);
-
     let dogScoreSound = new Audio("dog-score.mp3");
     dogScoreSound.play();
 

@@ -1,9 +1,7 @@
-
 let board;
 let boardWidth = 500;
 let boardHeight = 500;
 let context; 
-
 let playerWidth = 10;
 let playerHeight = 50;
 let playerVelocityY = 0;
@@ -54,20 +52,17 @@ window.onload = function() {
 function update() {
     requestAnimationFrame(update);
     context.clearRect(0, 0, board.width, board.height);
-
     context.fillStyle = "skyblue";
     let nextPlayer1Y = player1.y + player1.velocityY;
     if (!outOfBounds(nextPlayer1Y)) {
         player1.y = nextPlayer1Y;
     }
     context.fillRect(player1.x, player1.y, playerWidth, playerHeight);
-
     let nextPlayer2Y = player2.y + player2.velocityY;
     if (!outOfBounds(nextPlayer2Y)) {
         player2.y = nextPlayer2Y;
     }
     context.fillRect(player2.x, player2.y, playerWidth, playerHeight);
-
     context.fillStyle = "white";
     ball.x += ball.velocityX;
     ball.y += ball.velocityY;
