@@ -50,10 +50,11 @@ body {
 .carousel::scroll-button(right) {
     content: '→';
     position: fixed;
-    left: 25px;
+    right: 25px;
     top: 50%;
     transform: translateY(-50%);
     width: 60px;
+    height: 60px;
     border: none;
     border-radius: 50%;
     background-color: skyblue;
