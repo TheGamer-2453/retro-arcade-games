@@ -89,6 +89,8 @@ body {
     font-weight: 600;
     scroll-snap-align: start;
     transition: transform .25s ease;
+    text-decoration: none;
+    color: inherit;
 }
 
 .card:hover {
