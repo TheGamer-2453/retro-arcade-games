@@ -31,8 +31,7 @@ Sudoku - The objective of Sudoku is to fill every empty cell in the grid with nu
 Tetris - The objective of Tetris is to clear lines by arranging falling blocks to form complete horizontal rows. Move the blocks left and right using the Arrow keys or A and D keys. Press the Up Arrow or W key to rotate the blocks, and use the Down Arrow key or S key to make them fall faster. Clear as many lines as possible without letting the blocks reach the top of the screen.
 
 <img width="1873" height="999" alt="image" src="https://github.com/user-attachments/assets/fe4acefe-44b3-4e79-84c2-40a13e5b28e2" />
-
-
+<br>
 Two Player Games 
 
 Connect 4 - The objective of Connect 4 is to be the first player to connect four of your pieces in a row, either horizontally, vertically, or diagonally. Click on a column to drop your piece into it. Take turns placing pieces while blocking your opponent from connecting four. Connect four pieces before your opponent to win the game.
