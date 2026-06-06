@@ -32,6 +32,7 @@ Tetris - The objective of Tetris is to clear lines by arranging falling blocks t
 
 <img width="1873" height="999" alt="image" src="https://github.com/user-attachments/assets/fe4acefe-44b3-4e79-84c2-40a13e5b28e2" />
 
+
 Two Player Games 
 
 Connect 4 - The objective of Connect 4 is to be the first player to connect four of your pieces in a row, either horizontally, vertically, or diagonally. Click on a column to drop your piece into it. Take turns placing pieces while blocking your opponent from connecting four. Connect four pieces before your opponent to win the game.
